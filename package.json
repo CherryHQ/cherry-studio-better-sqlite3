@@ -1,0 +1,26 @@
+{
+  "name": "cherry-studio-better-sqlite3",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Reproducible GLIBC 2.28 better-sqlite3 prebuilds for Cherry Studio",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CherryHQ/cherry-studio-better-sqlite3.git"
+  },
+  "engines": {
+    "node": ">=24.11.1 <24.16.0"
+  },
+  "scripts": {
+    "build": "node scripts/linux-native/build.js x64 arm64",
+    "build:arm64": "node scripts/linux-native/build.js arm64",
+    "build:x64": "node scripts/linux-native/build.js x64",
+    "prepare:release": "node scripts/prepare-release.js",
+    "test": "node --test scripts/__tests__/*.test.js"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "4.0.4",
+    "better-sqlite3": "12.11.1",
+    "electron": "41.8.0"
+  }
+}
