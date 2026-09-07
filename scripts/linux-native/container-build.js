@@ -83,6 +83,7 @@ function main() {
       env: {
         CC: '/opt/rh/gcc-toolset-11/root/usr/bin/gcc',
         CXX: '/opt/rh/gcc-toolset-11/root/usr/bin/g++',
+        CXXFLAGS: '-UV8_DEPRECATION_WARNINGS',
         PYTHON: '/usr/bin/python3.11',
         npm_package_config_node_gyp_tarball: electronHeadersPath
       }
