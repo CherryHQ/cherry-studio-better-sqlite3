@@ -29,7 +29,7 @@ Requirements:
 npm ci --ignore-scripts
 npm test
 npm run build
-npm run prepare:release -- better-sqlite3-v12.11.1-electron-v41.8.0-r1
+npm run prepare:release -- better-sqlite3-v12.11.1-electron-v44.2.0-r1
 ```
 
 Generated native addons are written under `scripts/linux-native/prebuilt/`. Prepared release assets are written to
